@@ -1,0 +1,11 @@
+@use 'colors';
+@use 'fonts';
+@use 'background';
+@use 'header';
+@use 'menu';
+@use 'video';
+
+body {
+    color: var(--white);
+    background-color: var(--black);
+}
