@@ -4,8 +4,20 @@
 @use 'header';
 @use 'menu';
 @use 'video';
+@use 'sections';
+@use 'footer';
+
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
     color: var(--white);
     background-color: var(--black);
+    margin: 0;
+}
+
+.odkaz {
+    color: var(--white);
 }
