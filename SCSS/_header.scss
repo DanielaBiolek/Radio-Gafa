@@ -2,15 +2,24 @@
 
 .header__foto {
     display: block;
-    width: 95vw;
+    width: 65vw;
     margin: 0 auto;
+    padding: 0 0 50px;
 }
 
-.title--main {
+/*.title--main {
     color: var(--grey);
     margin: 0 auto;
     padding: 50px 0;
+}*/
+
+.header__gafa {
+    max-width: 50vw;
+    padding: 40px 0;
+    margin:0 auto;
+    display: block;
 }
+
 
 @media screen and (min-width: 800px) {
     
