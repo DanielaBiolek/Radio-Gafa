@@ -15,15 +15,24 @@
     text-decoration: none;
 }
 
+.menu__odkaz::after {
+    background-color: var(--black);
+    height: 1.5px;
+    width: auto;
+    content: "";
+    display: block;
+}
+
+.menu__odkaz:hover::after,
+.menu__odkaz:focus::after  {
+    background-color: var(--grey);
+}
+
 .menu__odkaz:hover,
 .menu__odkaz:focus {
     color: var(--grey);
 }
 
-.menu__odkaz:active {
-    background-color: var(--grey);
-    color: var(--black);
-}
 
 @media screen and (min-width: 800px) {
 

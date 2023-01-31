@@ -1,0 +1,22 @@
+@use 'colors';
+
+.koncerty__bunka {
+    text-align: left;
+    padding: 20px 40px;
+    margin: 0;
+    border-bottom: 1px solid;
+    border-color: var(--black);
+}
+
+
+.koncerty__tabulka {
+    border-spacing: 0;
+}
+
+.koncerty__radek--koncert {
+    font-weight: 700;
+}
+
+.odkaz--cerny {
+    color: var(--black);
+}

@@ -6,18 +6,23 @@
 @use 'video';
 @use 'sections';
 @use 'footer';
+@use 'koncerty';
+@use 'kontakt';
 
 html {
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
+*, ::before, ::after {
+    box-sizing: inherit;
+}
 
 body {
     color: var(--white);
     background-color: var(--black);
     margin: 0;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
-.odkaz {
-    color: var(--white);
-}

@@ -46,14 +46,22 @@ body {
   text-decoration: none;
 }
 
+.menu__odkaz::after {
+  background-color: var(--black);
+  height: 1.5px;
+  width: auto;
+  content: "";
+  display: block;
+}
+
+.menu__odkaz:hover::after,
+.menu__odkaz:focus::after {
+  background-color: var(--grey);
+}
+
 .menu__odkaz:hover,
 .menu__odkaz:focus {
   color: var(--grey);
-}
-
-.menu__odkaz:active {
-  background-color: var(--grey);
-  color: var(--black);
 }
 
 @media screen and (min-width: 800px) {
@@ -75,22 +83,37 @@ body {
   }
 }
 .video__item {
-  width: 500px;
-  height: 300px;
+  width: 100%;
+  aspect-ratio: 16/9;
 }
 
+.video__text {
+  font-weight: 700;
+  margin: 0;
+  padding: 0 0 40px;
+}
+
+@media screen and (min-width: 1000px) {
+  .video__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 40px;
+  }
+}
 .section {
-  min-height: 100vh;
+  /*min-height: 100vh;*/
   max-width: 1400px;
   width: 75vw;
-  margin: 50px auto;
+  margin: 0 auto;
+  padding: 0 0 80px;
   text-align: block;
 }
 
 .title--section {
   font-weight: 700;
   margin: 0;
-  padding: 60px 0 30px 0;
+  padding: 80px 0 30px 0;
   font-size: 35px;
 }
 
@@ -110,16 +133,43 @@ body {
   font-size: 15px;
 }
 
+.koncerty__bunka {
+  text-align: left;
+  padding: 20px 40px;
+  margin: 0;
+  border-bottom: 1px solid;
+  border-color: var(--black);
+}
+
+.koncerty__tabulka {
+  border-spacing: 0;
+}
+
+.koncerty__radek--koncert {
+  font-weight: 700;
+}
+
+.odkaz--cerny {
+  color: var(--black);
+}
+
+.odkaz--bily {
+  color: var(--white);
+}
+
 html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
 }
 
 body {
   color: var(--white);
   background-color: var(--black);
   margin: 0;
-}
-
-.odkaz {
-  color: var(--white);
+  font-size: 18px;
+  line-height: 1.5;
 }/*# sourceMappingURL=style.css.map */
