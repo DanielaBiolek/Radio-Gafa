@@ -150,6 +150,11 @@ body {
   border-color: var(--black);
 }
 
+.koncerty__bunka--horni {
+  font-size: 20px;
+  text-align: center;
+}
+
 .koncerty__tabulka {
   border-spacing: 0;
 }
@@ -164,6 +169,20 @@ body {
 
 .odkaz--bily {
   color: var(--white);
+}
+
+.kontakt__item {
+  margin: 0;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+}
+
+.kontakt__ikona {
+  max-width: 50px;
+  margin: 30px;
 }
 
 html {
@@ -181,4 +200,8 @@ body {
   margin: 0;
   font-size: 18px;
   line-height: 1.5;
+}
+
+.text__semibold {
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

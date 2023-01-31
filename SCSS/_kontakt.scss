@@ -3,3 +3,17 @@
 .odkaz--bily {
     color: var(--white);
 }
+
+.kontakt__item {
+    margin:0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+}
+
+.kontakt__ikona {
+    max-width: 50px;
+    margin: 30px;
+}
