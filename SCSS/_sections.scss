@@ -7,12 +7,30 @@
     text-align: block;
 }
 
-.title--section {
+.section__title {
     font-weight: 700;
     margin: 0;
     padding: 80px 0 30px 0;
     font-size: 35px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
 }
+
+/*.section__title::after {
+    content: '';
+    display: block;
+    max-width: 200px;
+    height: 3px;
+}
+
+.section__title--white::after {
+    background-color: var(--black);
+}
+
+.section__title--black::after {
+    background-color: var(--white);
+}*/
+
 
 .gafa__gafa {
     display: block;

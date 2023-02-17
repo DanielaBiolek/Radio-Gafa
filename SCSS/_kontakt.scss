@@ -6,7 +6,11 @@
 
 .kontakt__box {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.kontakt__foto {
+    max-width: 100%;
 }
 
 .kontakt__item {

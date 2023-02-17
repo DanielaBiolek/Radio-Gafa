@@ -15,6 +15,7 @@
 
 .koncerty__tabulka {
     border-spacing: 0;
+    margin: 0 auto;
 }
 
 .koncerty__radek--koncert {
@@ -23,4 +24,8 @@
 
 .odkaz--cerny {
     color: var(--black);
+}
+
+.koncerty__box {
+    margin: 0 auto;
 }

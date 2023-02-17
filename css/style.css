@@ -17,7 +17,7 @@ body {
   display: block;
   width: 65vw;
   margin: 0 auto;
-  padding: 0 0 50px;
+  padding: 0 0 40px;
 }
 
 /*.title--main {
@@ -119,13 +119,29 @@ body {
   text-align: block;
 }
 
-.title--section {
+.section__title {
   font-weight: 700;
   margin: 0;
   padding: 80px 0 30px 0;
   font-size: 35px;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
 }
 
+/*.section__title::after {
+    content: '';
+    display: block;
+    max-width: 200px;
+    height: 3px;
+}
+
+.section__title--white::after {
+    background-color: var(--black);
+}
+
+.section__title--black::after {
+    background-color: var(--white);
+}*/
 .gafa__gafa {
   display: block;
   margin: 0 auto;
@@ -162,6 +178,7 @@ body {
 
 .koncerty__tabulka {
   border-spacing: 0;
+  margin: 0 auto;
 }
 
 .koncerty__radek--koncert {
@@ -172,13 +189,21 @@ body {
   color: var(--black);
 }
 
+.koncerty__box {
+  margin: 0 auto;
+}
+
 .odkaz--bily {
   color: var(--white);
 }
 
 .kontakt__box {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.kontakt__foto {
+  max-width: 100%;
 }
 
 .kontakt__item {
@@ -202,6 +227,28 @@ body {
 
 .fotky__nahled {
   max-width: 100%;
+}
+
+/*.onas__box {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+}*/
+.onas__foto {
+  max-width: 30vw;
+  float: right;
+  margin: 0 0 50px 50px;
+}
+
+/*.sluzby__box {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px
+}*/
+.sluzby__foto {
+  max-width: 30vw;
+  float: left;
+  padding-right: 50px;
 }
 
 html {
