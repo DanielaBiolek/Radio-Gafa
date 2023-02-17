@@ -13,9 +13,10 @@
 .menu__odkaz {
     color: var(--white);
     text-decoration: none;
+    font-weight: 500;
 }
 
-.menu__odkaz::after {
+/*.menu__odkaz::after {
     background-color: var(--black);
     height: 1.5px;
     width: auto;
@@ -26,11 +27,12 @@
 .menu__odkaz:hover::after,
 .menu__odkaz:focus::after  {
     background-color: var(--grey);
-}
+}*/
+
 
 .menu__odkaz:hover,
 .menu__odkaz:focus {
-    color: var(--grey);
+    color: var(--black);
 }
 
 
@@ -40,6 +42,9 @@
         position: sticky;
         top: 0;
         background-color: var(--black);
+        background-image: url(/fotky/gafa2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
         padding: 10px;
     }
 

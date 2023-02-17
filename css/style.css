@@ -51,24 +51,24 @@ body {
 .menu__odkaz {
   color: var(--white);
   text-decoration: none;
+  font-weight: 500;
 }
 
-.menu__odkaz::after {
-  background-color: var(--black);
-  height: 1.5px;
-  width: auto;
-  content: "";
-  display: block;
+/*.menu__odkaz::after {
+    background-color: var(--black);
+    height: 1.5px;
+    width: auto;
+    content: "";
+    display: block;
 }
 
 .menu__odkaz:hover::after,
-.menu__odkaz:focus::after {
-  background-color: var(--grey);
-}
-
+.menu__odkaz:focus::after  {
+    background-color: var(--grey);
+}*/
 .menu__odkaz:hover,
 .menu__odkaz:focus {
-  color: var(--grey);
+  color: var(--black);
 }
 
 @media screen and (min-width: 800px) {
@@ -77,6 +77,9 @@ body {
     position: sticky;
     top: 0;
     background-color: var(--black);
+    background-image: url(/fotky/gafa2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 10px;
   }
   .menu__item {
@@ -130,7 +133,7 @@ body {
 }
 
 .footer {
-  max-width: 1400px;
+  /*max-width: 1400px;*/
   margin: 0;
   padding: 20px 50px;
   background-image: url(/fotky/gafa1.png);
