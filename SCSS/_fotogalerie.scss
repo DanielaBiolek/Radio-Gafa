@@ -1,0 +1,9 @@
+.fotky__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.fotky__nahled {
+    max-width: 100%;
+}
